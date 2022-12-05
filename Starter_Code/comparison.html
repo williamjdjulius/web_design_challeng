@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Add a title here -->
+    <comparison>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
@@ -17,11 +17,75 @@
   </head>
 
   <body>
-    <!-- Start of navbar -->
-    <!-- End of navbar -->
 
+    <nav class="navbar">
+  
+      <!-- LOGO -->
+      
+      <div class="logo">Latitude</div>
+  
+      <!-- NAVIGATION MENU -->
+      
+      <ul class="nav-links">
+        <a class="menu" href="index.html">Plots</a>
+        <ul class="dropdown">
+          <li><a href="visualizations/temp.html">Max Tempreture </a></li> 
+          <li><a href="visualizations/humidity.html">Humidity</a></li>  
+          <li><a href="visualizations/cloudiness.html">Cloudiness</a></li> 
+          <li><a href="visualizations/wind.html">Wind Speed</a></li> 
+          </ul>
+        </li>
+        <a class= "nav-item" href="data.html">Data</a>
+        <a class="nav-item" href="comparison.html">Comparisons</a>
+      </div>
+    </ul>
+  </nav>
+  
     <!-- Start of container -->
-    <!-- End of container -->
+    <div class="container">
+      <div class="row">
+        <div>
+          <!-- Left box  -->
+          <div class="box">
+            <h1 class="title">Comparison: Latitude vs X</h1>
+            <hr>
+            <p>Click any plot to get an in-depth analysis.</p>
+            <div class="container" style="padding-bottom: 40px;">
+              <div class="row">
+                <div class="col-lg-6" style="padding: 30px;">
+                  <div class="title">vs</div>
+                  <a class="nav-item" href="visualizations/temp.html">Max Temp</a>
+                    <img class="panel" src="assets/images/Fig1.png" alt="Max Temperature Image">
+                  </a>
+                </div>
+                <div class="col-lg-6" style="padding: 30px;">
+                  <div class="title">vs.</div>
+                  <a class="nav-item" href="visualizations/humidity.html">Humidity</a>
+                    <img class="panel" src="assets/images/Fig2.png" alt="Humidity Graph">
+                  </a>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-lg-6" style="padding: 30px;">
+                  <div class="title">vs.</div>
+                  <a class="nav-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                    <img class="panel" src="assets/images/Fig3.png" alt="Cloudiness Graph">
+                  </a>
+  
+                </div>
+                <div class="col-lg-6" style="padding: 30px;">
+                  <div class="title">vs.</div>
+                  <a class="nav-item" href="visualizations/wind.html">Wind</a>
+                    <img class="panel" src="assets/images/Fig4.png" alt="Wind Speed Graph">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
